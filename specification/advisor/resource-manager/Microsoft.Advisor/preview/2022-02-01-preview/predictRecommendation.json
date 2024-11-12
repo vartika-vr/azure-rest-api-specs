@@ -21,7 +21,7 @@
         "tags": [
           "Operations"
         ],
-        "description": "Lists all the available Advisor REST API operations.",
+        "description": "Lists all the available Advisor REST API.",
         "operationId": "Operations_List",
         "parameters": [
           {
