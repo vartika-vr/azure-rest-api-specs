@@ -26,7 +26,7 @@ options:
   # "@azure-tools/typespec-java": true
   # Uncomment this line and add "@azure-tools/typespec-csharp" to your package.json to generate C# code
   "@azure-tools/typespec-csharp":
-      package-dir: "Security.KeyVault.Administration"
+      package-dir: "Azure.Security.KeyVault.Administration"
       namespace: "Azure.Security.KeyVault.Administration"
       "output-path": "./src/Generated"
       flavor: azure
