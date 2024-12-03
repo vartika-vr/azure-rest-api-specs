@@ -1,7 +1,8 @@
 // client.tsp
 import "./administration.tsp";
 import "../Security.KeyVault.Common/common.tsp";
-import "@azure-tools/typespec-client-generator-core";
+
+using KeyVault;
 using Azure.ClientGenerator.Core;
 @TypeSpec.Versioning.useDependency(KeyVault.Versions.`v7.6_preview.1`)
 namespace ClientCustomizations;
