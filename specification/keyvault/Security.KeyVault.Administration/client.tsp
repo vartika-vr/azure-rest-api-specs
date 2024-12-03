@@ -1,6 +1,5 @@
 // client.tsp
 import "./administration.tsp";
-import "../Security.KeyVault.Common/common.tsp";
 
 using KeyVault;
 using Azure.ClientGenerator.Core;
