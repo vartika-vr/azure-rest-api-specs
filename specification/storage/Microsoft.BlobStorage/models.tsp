@@ -184,12 +184,6 @@ model ListContainersSegmentResponse {
   /** The container segment. */
   // TODO: should this be unwrapped? The swagger shows it as wrapped. Example in docs: https://learn.microsoft.com/en-us/rest/api/storageservices/list-containers2?tabs=microsoft-entra-id#response-body
   @Xml.name("Containers") containerItems: ContainerItem[];
-
-  /** The next marker of the containers. */
-  #suppress "@azure-tools/typespec-azure-core/casing-style" "Existing API. The casing is correct."
-  @TypeSpec.nextLink
-  @Xml.name("NextMarker")
-  NextMarker?: string;
 }
 
 /** An Azure Storage container. */
@@ -876,11 +870,6 @@ model ListBlobsFlatSegmentResponse {
   // TODO: is this correct? Looks like the name is wrong...should be "Blobs"
   /** The blob segment. */
   @Xml.name("Segment") segment: BlobFlatListSegment;
-
-  /** The next marker of the blobs. */
-  @TypeSpec.nextLink
-  @Xml.name("NextMarker")
-  nextMarker?: string;
 }
 
 /** The blob flat list segment. */
@@ -898,11 +887,6 @@ model PageList {
 
   /** The clear ranges. */
   @Xml.name("ClearRange") clearRange?: ClearRange[];
-
-  /** The next marker. */
-  @TypeSpec.nextLink
-  @Xml.name("NextMarker")
-  nextMarker?: string;
 }
 
 /** The page range. */
@@ -1959,11 +1943,6 @@ model ListBlobsHierarchySegmentResponse {
   // TODO: Is this correct? Looks like it should be blobs
   /** The blob segment. */
   @Xml.name("Segment") segment: BlobHierarchyListSegment;
-
-  /** The next marker of the blobs. */
-  @TypeSpec.nextLink
-  @Xml.name("NextMarker")
-  nextMarker?: string;
 }
 
 /** The list blob includes parameter. */
